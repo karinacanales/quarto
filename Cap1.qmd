@@ -1,0 +1,17 @@
+---
+title: "Cap1"
+---
+
+![](/cover.png)
+\-\--
+
+```{r}
+library(ggplot2)
+df <- diamonds[sample(1:nrow(diamonds), size = 100),] 
+p <- ggplot(df, aes(carat, price, col=cut)) + 
+  geom_point() + 
+  theme(axis.ticks = element_line(size = 10))+ 
+  theme_bw()
+p
+
+```

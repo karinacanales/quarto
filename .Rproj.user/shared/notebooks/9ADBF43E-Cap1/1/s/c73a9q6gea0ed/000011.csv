@@ -1,0 +1,8 @@
+"0","p <- ggplot(df, aes(carat, price, col=cut)) + 
+  geom_point() + 
+  theme(axis.ticks = element_line(size = 10))+ 
+  theme_bw()
+"
+"2","Error in ggplot(df, aes(carat, price, col = cut)) : 
+  could not find function ""ggplot""
+"

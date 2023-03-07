@@ -1,0 +1,16 @@
+{
+  "hash": "b72e898ab749d65ed4a4903419715cc4",
+  "result": {
+    "markdown": "---\ntitle: \"Cap1\"\n---\n\n\n![](/cover.png)\n\\-\\--\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\ndf <- diamonds[sample(1:nrow(diamonds), size = 100),] \np <- ggplot(df, aes(carat, price, col=cut)) + \n  geom_point() + \n  theme(axis.ticks = element_line(size = 10))+ \n  theme_bw()\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nWarning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.\nℹ Please use the `linewidth` argument instead.\n```\n:::\n\n```{.r .cell-code}\np\n```\n\n::: {.cell-output-display}\n![](Cap1_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "Cap1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
